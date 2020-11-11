@@ -2,14 +2,14 @@
 	####################################################################################################
 	# File      : DevOpsDeploy_OICBulkIntegration.ps1                           
 	# Author    : Sujan Gutha                                   
-	# Created   : 10/13/2020                                           
+	# Created   : 08/13/2020                                           
 	#                                                                  
 	# Usage	: This powershell scripts used to Deploy the OICS iar file to cloud.
 	#
 	#                                                                  #
 	# MODIFIED BY                       DATE                  CHANGE DESCRIPTION         
 	#-------------------              ----------            -------------------------  
-	# Sujan Gutha                    10/13/2020               Initial Created
+	# Sujan Gutha                    08/13/2020               Initial Created
 	######################################################################################################
 	#>
 
