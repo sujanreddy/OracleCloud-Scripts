@@ -1,7 +1,7 @@
 <#
 ####################################################################################################
 # File      : DevOpsBuild_OICCloneImport.ps1                      
-# Author    : Satheesh Viswanathan                                     
+# Author    : Sujan Gutha	                                    
 # Created   : 06/10/2020                                          
 #                                                                  
 # Usage	:  Script to Import the OIC Metadata information.
@@ -9,7 +9,7 @@
 #                                                                  #
 # MODIFIED BY                       DATE                  CHANGE DESCRIPTION         
 #-------------------              ----------            -------------------------  
-# Satheesh Viswanathan             06/10/2020               Initial Created
+# Sujan Gutha            06/10/2020               Initial Created
 ######################################################################################################
 #>
 
