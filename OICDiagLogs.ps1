@@ -1,7 +1,7 @@
 <#
 ####################################################################################################
 # File      : DevOpsDeploy_DiagLogs.ps1                          
-# Author    : Satheesh Viswanathan                                    
+# Author    : Sujan Gutha                                   
 # Created   : 06/10/2020                                           
 #                                                                  
 # Usage	: This powershell script will use the OIC REST API to fetch the diagnostic log
@@ -9,7 +9,7 @@
 #                                                                  
 # MODIFIED BY                       DATE                  CHANGE DESCRIPTION         
 #-------------------              ----------            -------------------------  
-# Satheesh Viswanathan              06/10/2020              Initial Version
+# Sujan Gutha              06/10/2020              Initial Version
 #
 ######################################################################################################
 #>
