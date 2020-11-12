@@ -131,9 +131,7 @@ $file_name = Get-ChildItem -Path $searchinfolder -Filter $var -Recurse | %{$_.Fu
 						'-X', 'GET',
 						 "https://$url/$ext/$result/activationErrors"
 						
-		#$var = 'SOUTHE_CO_POET_PROJEC_SEGMEN_01.00.0000.iar'
-
-
+	
 		## Check if the Integration exists or not
 
 
