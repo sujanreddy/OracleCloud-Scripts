@@ -172,19 +172,7 @@ $file_name = Get-ChildItem -Path $searchinfolder -Filter $var -Recurse | %{$_.Fu
 		$import = & curl.exe $importArgumentActivate
 		Write-Host "***********************************Activating Integration($var) : $import*******************"
 		}
-	    try
-			{
-		Write-Output "<<<<<<<<<Before Updating RELEASE INFO DB Table>>>>>>>>>>>>>>>>>>>>"
-		 . "$env:DevOps_DB_Operation_Script\devops_db_operations.ps1"
-		 Write-Output "<<<<<<<<<Updating RELEASE INFO DB Table>>>>>>>>>>>>>>>>>>>>"
-         sqlreleaseinsert "$branch" "$env:Release_EnvironmentName" -Manifest "$var" -Attribute1 "Manifest_file=$var"
-			}
-		  catch
-		   {
-			Write-Host "The Powershell failed The Powershell failed in inserting the release information into the table"
-			Write-Host  "##vso[task.logissue type=error]Unhandled Exception,..occurred in the Powershell script line number : $Exception_line_num"
-		   }	
-	}
+	  	}
 	} Catch {	
 	  Write-Host "The Powershell failed with: $LastExitCode"
 	  $ErrorMessage = $_.Exception.Message
