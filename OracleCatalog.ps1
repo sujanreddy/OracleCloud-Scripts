@@ -173,12 +173,7 @@ $pathname = $RepDetail.Path
 			#Increase Timeout value to mitigate timeout error from the api
 			$proxy.Timeout = 20000000
 			$proxy.pasteItem2((Get-Content $file_name -Encoding byte),$pathname,1,1,$logontoken)
-		Write-Output "<<<<<<<<<Before Updating RELEASE INFO DB Table>>>>>>>>>>>>>>>>>>>>"
-		 . "$env:DevOps_DB_Operation_Script\devops_db_operations.ps1"
-		 Write-Output "<<<<<<<<<Updating RELEASE INFO DB Table>>>>>>>>>>>>>>>>>>>>"
-         sqlreleaseinsert "$branch" "$env:Release_EnvironmentName" -Manifest "$filename" -Attribute1 "Manifest_file=$filename | manifest_dir=$pathname"
-		
-		}
+			}
 		Catch {	
 			Write-Host "The Powershell failed with: $LastExitCode"
 			$ErrorMessage = $_.Exception.Message
