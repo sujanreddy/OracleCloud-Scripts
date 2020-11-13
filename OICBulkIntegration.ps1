@@ -1,6 +1,6 @@
 <#
 	####################################################################################################
-	# File      : DevOpsDeploy_OICBulkIntegration.ps1                           
+	# File      : OICBulkIntegration.ps1                           
 	# Author    : Sujan Gutha                                   
 	# Created   : 08/13/2020                                           
 	#                                                                  
