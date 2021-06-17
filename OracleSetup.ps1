@@ -319,7 +319,7 @@ $getTask = [xml]@'
           Write-Host "##vso[task.logissue type=error]The Request completed in Error, $ErrorMessage"
     cd "$env:System_DefaultWorkingDirectory"
  
-    & git clone https://"${ServiceAccount}:$password"@tfs.southernco.com/EnterpriseFoundations/DevOps/_git/OracleLogs
+    & git clone https://"${ServiceAccount}:$password"@host_name/DevOps/_git/OracleLogs
     cd OracleLogs
     
     $path = "$pwd\Oracle Setup Logs\$taskcode"
@@ -336,7 +336,7 @@ $getTask = [xml]@'
     & git add .
     & git status
     & git commit -a -m "$taskcode$timeStamp has been created and pushed"
-    & git  push https://${ServiceAccount}:$password@tfs.southernco.com/EnterpriseFoundations/DevOps/_git/OracleLogs --all
+    & git  push https://${ServiceAccount}:$password@host_name/DevOps/_git/OracleLogs --all
 	exit 1   
     }
     if (($result -like "COMPLETED") -or ($result -like "COMPLETED_WARNINGS") ) 
@@ -344,7 +344,7 @@ $getTask = [xml]@'
           Write-Host "##[debug] ************************The Above Output in Green is for getting the Task Import Status Result ***********************************************!"
           Write-Host "##[section] $filecontent"
     cd "$env:System_DefaultWorkingDirectory"
-    & git clone https://"${ServiceAccount}:$password"@tfs.southernco.com/EnterpriseFoundations/DevOps/_git/OracleLogs
+    & git clone https://"${ServiceAccount}:$password"@host_name/DevOps/_git/OracleLogs
     cd OracleLogs
    # git checkout master
    
@@ -362,7 +362,7 @@ $getTask = [xml]@'
     & git add .
     & git status
     & git commit -a -m "$taskcode$timeStamp has been created and pushed"
-    & git  push https://${ServiceAccount}:$password@tfs.southernco.com/EnterpriseFoundations/DevOps/_git/OracleLogs --all
+    & git  push https://${ServiceAccount}:$password@host_name/DevOps/_git/OracleLogs --all
         return
         }
      start-sleep -seconds 10
